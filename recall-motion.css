@@ -1,0 +1,8 @@
+dialog[open]{animation:arrive .85s cubic-bezier(.16,1,.3,1) both}dialog[open]::backdrop{animation:veil .7s ease both}dialog[open] #memory img,dialog[open] #memory video{animation:reveal 1.15s cubic-bezier(.16,1,.3,1) both}dialog[open] #memory h3{animation:words .8s .2s both}dialog[open] #memory p{animation:words 1s .35s both}dialog[open] #return{animation:words .8s .5s both}dialog.leaving{animation:depart .45s ease both}.star:hover .symbol{animation:twinkle 1.2s ease-in-out infinite}.star:hover img{filter:brightness(1.15)}
+@keyframes arrive{from{opacity:0;transform:perspective(1200px) translateY(65px) rotateX(12deg) scale(.65);filter:blur(12px)}to{opacity:1;transform:perspective(1200px) translateY(0) rotateX(0) scale(1);filter:blur(0)}}
+@keyframes reveal{from{opacity:0;clip-path:inset(45% 40% round 60px);transform:scale(.85)}to{opacity:1;clip-path:inset(0 round 5px);transform:scale(1)}}
+@keyframes words{from{opacity:0;transform:translateY(22px);filter:blur(5px)}to{opacity:1;transform:translateY(0);filter:blur(0)}}
+@keyframes veil{from{opacity:0}to{opacity:1}}
+@keyframes depart{to{opacity:0;transform:translateY(-25px) scale(.8);filter:blur(9px)}}
+@keyframes twinkle{50%{transform:scale(1.25);filter:brightness(1.5)}}
+@media(prefers-reduced-motion:reduce){dialog[open],dialog[open]::backdrop,dialog[open] #memory img,dialog[open] #memory video,dialog[open] #memory h3,dialog[open] #memory p,dialog[open] #return,dialog.leaving,.star:hover .symbol{animation:none}}

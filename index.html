@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#030108"><title>Hasta Kepler · Para mi niña</title><link rel="stylesheet" href="journey.css"></head>
+<body><canvas id="universe" aria-hidden="true"></canvas><div id="constellation"></div>
+<header><span>DE WIL · PARA MI NIÑA</span><h1>Hasta Kepler.</h1><p id="chapter">Nuestro pequeño infinito</p></header>
+<section id="entrance"><div><span class="eyebrow">12 DE SEPTIEMBRE · TUS 25</span><h2>Hoy quería<br>estar contigo.</h2><button id="enter" class="primary">Ven conmigo <span>✧</span></button><small>Un clic. Tú, yo y nuestra canción.</small><div id="countdown"></div></div></section>
+<div id="caption" aria-live="polite"></div>
+<button id="loveCounter" aria-label="Abrir nuestro tiempo"><span>Mi amor por ti comenzó hace…</span><strong id="loveTime"></strong><small>Y sigue creciendo contigo ♡</small></button>
+<footer><div><p id="help">Arrastra para explorar · Rueda para acercarte · Clic en una estrella</p><span id="progress">Cada recuerdo es una parte del camino.</span></div><nav aria-label="Controles del viaje"><button id="reset">Ver galaxia</button><button id="rotation" aria-pressed="false">Pausar giro</button><button id="sound" aria-pressed="false">♫ Música</button><label>Volumen<input id="volume" aria-label="Volumen" type="range" min="0" max="1" step=".01" value=".7"></label><button id="destination">Ir a Kepler ✧</button></nav><p id="audioStatus" role="status"></p></footer>
+<audio id="music" src="assets/common.mp3" loop preload="auto"></audio>
+<dialog id="modal"><button id="close" aria-label="Cerrar">×</button><div id="memory"></div><button id="return">Volver a las estrellas</button></dialog>
+<link rel="stylesheet" href="counter.css"><link rel="stylesheet" href="recall-motion.css"><script src="journey.js"></script></body></html>
